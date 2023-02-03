@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <title>Wypożyczalnia</title>
+</head>
+<body id="body-contact">
+    <nav>
+      <a class="navmenu" href="index.html">Home</a>
+      <a class="navmenu" href="cars.html">Nasza Flota</a>
+      <a class="navmenu" href="contact.html">Kontakt</a>
+      <a class="navmenu" href="use.html">Usługi</a>
+      </nav>
+      
+<div class="main-contact">
+    <div id="box">
+        <div class="noty">
+            <div class="noty-content">
+                <i class="fas fa-solid fa-check check"></i>
+    
+                <div class="message">
+                    <span class="text text-1">Wiadomość Została Wysłana!</span>
+                    <span class="text text-2">Wkrótce się z Tobą skontaktujemy!</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close"></i>
+    
+            <div class="progress"></div>
+        </div>
+        <form onsubmit="return false">
+            <h3>Formularz Kontaktowy</h3>
+            <label for="imie"><a>Imie i Nazwisko:</a></label><br>
+            <input type="text" placeholder="Jan Kowalski" id="imie" name="imie" required><br>
+            <label for="email"><a>Email:</a></label><br>
+            <input type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="JanKowalski@gmail.com" id="email" required><br>
+            <textarea name="message" id="text" rows="10" cols="30"></textarea>
+            <br>
+            <button >Wyślij</button>
+        </form>
+       
+      
+    </div>
+</div>
+<div class="main_icon">
+    <div class="footer_main_icon">
+        <a href="#" class="footer_icon"><i class = "fab fa-facebook-f"></i></a>
+        <a href="#" class="footer_icon"><i class = "fab fa-twitter"></i></a>
+        <a href="#" class="footer_icon"><i class = "fab fa-instagram"></i></a>
+    </div>
+</div>
+  
+  
+    <script src="main.js"></script>
+</body>
+</html>

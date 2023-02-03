@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <title>Wypożyczalnia</title>
+</head>
+<body>
+  <nav>
+      <a class="navmenu" href="index.html">Home</a>
+      <a class="navmenu" href="cars.html">Nasza Flota</a>
+      <a class="navmenu" href="contact.html">Kontakt</a>
+      <a class="navmenu" href="use.html">Usługi</a>
+      
+  </nav>
+  <div class="prom">
+    <p id="timer"></p>
+  </div>
+  
+  
+    
+  
+  <section class="cars-store" id="auto1">
+    <div class="cars-card">
+      <div class="left-cont">
+        <div class="price">
+          <h2 id="price1">549 <sup>zł</sup>/dzień</h2>  
+        </div>
+            
+            <img src="img/img1.jpg" id="img-cars">
+            <h2>Mercedes A45 AMG</h2>
+            <div class="icon">
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/settings.svg" id="icons" alt="moc">
+                <h3>393 HP</h3>
+              </div>
+              
+           
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/flash.svg"  id="icons" alt="przyspiesznie">
+                <h3>4.2SEC</h3>
+              </div>
+              
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/car.svg" id="icons" alt="vmax">
+                <h3>270 KM/H</h3>
+              </div>
+            </div>
+            
+          </div>
+          <div class="right-cont">
+            <div class="box-cars-form">
+              <form onsubmit="return false">
+                <h3>Oblicz koszt wynajmu!</h3>
+                <input type="text" placeholder="Wprowadź liczbe dni" id="day"  required><br><br>
+                <label>Zaznacz, jeżeli wybierasz cenę bez kaucji</label>
+                <input type="checkbox" value="true" id="true"><br><br>
+                <button onclick="licz()" >Oblicz</button><br><br>
+                <p id="score"></p>
+                
+               </form>
+            </div>
+           
+
+          </div>
+          <div class="limit">
+            <h3>Limity kilometrów</h3>
+            <div class="test">
+              <table>
+                <tr>
+                  <th>Doba</th>
+                  <th>500 Km</th>
+                </tr>
+                <tr>
+                  <td>Weekend</td>
+                  <td>900 Km</td>
+                </tr>
+                <tr>
+                  <td>Tydzień</td>
+                  <td>2000 Km</td>
+                </tr>
+              
+              </table><br>
+              <p>Kaucji Zwrotna wynosi: 0 lub 3000 zł ✅</p><br>
+              </p>Dodatkowy kilometr: 2,00 zł / km ✅</p>
+
+            </div>
+
+              
+            
+              
+          </div>
+      </div>
+      </section>
+      
+      <section class="cars-store" id="auto2">
+        <div class="cars-card">
+          <div class="left-cont">
+            <div class="price">
+              <h2  id="price2">549 <sup>zł</sup>/dzień</h2>  
+            </div>
+            <img src="img/img2.jpg" id="img-cars">
+            <h2>BMW M135i</h2>
+            <div class="icon">
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/settings.svg" id="icons" alt="moc">
+                <h3>306 HP</h3>
+              </div>
+              
+           
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/flash.svg"  id="icons" alt="przyspiesznie">
+                <h3>4.5SEC</h3>
+              </div>
+              
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/car.svg" id="icons" alt="vmax">
+                <h3>250 KM/H</h3>
+              </div>
+            </div>
+            
+          </div>
+          <div class="right-cont">
+            <div class="box-cars-form">
+              <form onsubmit="return false">
+                <h3>Oblicz koszt wynajmu!</h3>
+                <input type="text" placeholder="Wprowadź liczbe dni" id="day2"  required><br><br>
+                <label>Zaznacz, jeżeli wybierasz cenę bez kaucji</label>
+                <input type="checkbox" value="true" id="true2"><br><br>
+                <button onclick="licz2()" >Oblicz</button><br><br>
+                <p id="score2"></p>
+                </form>
+            </div>
+         </div>
+         <div class="limit">
+          <h3>Limity kilometrów</h3>
+          <div class="test">
+            <table>
+              <tr>
+                <th>Doba</th>
+                <th>300 Km</th>
+              </tr>
+              <tr>
+                <td>Weekend</td>
+                <td>800 Km</td>
+              </tr>
+              <tr>
+                <td>Tydzień</td>
+                <td>1500 Km</td>
+              </tr>
+            
+            </table><br>
+            <p>Kaucji Zwrotna wynosi: 0 lub 3000 zł ✅</p><br>
+            </p>Dodatkowy kilometr: 2,00 zł / km ✅</p>
+              
+
+          </div>
+       </div>
+        
+      </section>
+      
+      <section class="cars-store" id="auto3">
+        <div class="cars-card">
+          <div class="left-cont">
+            <div class="price">
+              <h2  id="price3">399 <sup>zł</sup>/dzień</h2>  
+            </div>
+            <img src="img/img3.jpg" id="img-cars">
+            <h2>BMW X3</h2>
+            <div class="icon">
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/settings.svg" id="icons" alt="moc">
+                <h3>190 HP</h3>
+              </div>
+              
+           
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/flash.svg"  id="icons" alt="przyspiesznie">
+                <h3>8.1SEC</h3>
+              </div>
+              
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/car.svg" id="icons" alt="vmax">
+                <h3>210 KM/H</h3>
+              </div>
+            </div>
+            
+          </div>
+          <div class="right-cont">
+            <div class="box-cars-form">
+              <form onsubmit="return false">
+                <h3>Oblicz koszt wynajmu!</h3>
+                <input type="text" placeholder="Wprowadź liczbe dni" id="day3"  required><br><br>
+                <label>Zaznacz, jeżeli wybierasz cenę bez kaucji</label>
+                <input type="checkbox" value="true" id="true3"><br><br>
+                <button onclick="licz3()" >Oblicz</button><br><br>
+                <p id="score3"></p>
+              </form>
+            </div>
+          </div>
+          <div class="limit">
+            <h3>Limity kilometrów</h3>
+            <div class="test">
+              <table>
+                <tr>
+                  <th>Doba</th>
+                  <th>300 Km</th>
+                </tr>
+                <tr>
+                  <td>Weekend</td>
+                  <td>800 Km</td>
+                </tr>
+                <tr>
+                  <td>Tydzień</td>
+                  <td>1200 Km</td>
+                </tr>
+              
+              </table><br>
+              <p>Kaucji Zwrotna wynosi: 0 lub 3000 zł ✅</p><br>
+              </p>Dodatkowy kilometr: 2,00 zł / km ✅</p>
+
+            </div>
+        </div>
+      </section>
+      
+      <section class="cars-store" id="auto4">
+        <div class="cars-card">
+          <div class="left-cont">
+            <div class="price">
+              <h2  id="price4">599 <sup>zł</sup>/dzień</h2>  
+            </div>
+            <img src="img/img4.jpg" id="img-cars">
+            <h2>Mercedes A45 AMG</h2>
+            <div class="icon">
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/settings.svg" id="icons" alt="moc">
+                <h3>380 HP</h3>
+              </div>
+              
+           
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/flash.svg"  id="icons" alt="przyspiesznie">
+                <h3>4.7SEC</h3>
+              </div>
+              
+              <div><img src="http://co0kie.github.io/htmlcss/bmw/img/car.svg" id="icons" alt="vmax">
+                <h3>266 KM/H</h3>
+              </div>
+            </div>
+          </div>
+          <div class="right-cont">
+            <div class="box-cars-form">
+              <form onsubmit="return false">
+                <h3>Oblicz koszt wynajmu!</h3>
+                <input type="text" placeholder="Wprowadź liczbe dni" id="day4"  required><br><br>
+                <label>Zaznacz, jeżeli wybierasz cenę bez kaucji</label>
+                <input type="checkbox" value="true" id="true4"><br><br>
+                <button onclick="licz4()" >Oblicz</button><br><br>
+                <p id="score4"></p>
+              </form>
+            </div>
+          </div>
+          <div class="limit">
+            <h3>Limity kilometrów</h3>
+            <div class="test">
+              <table>
+                <tr>
+                  <th>Doba</th>
+                  <th>300 Km</th>
+                </tr>
+                <tr>
+                  <td>Weekend</td>
+                  <td>800 Km</td>
+                </tr>
+                <tr>
+                  <td>Tydzień</td>
+                  <td>1200 Km</td>
+                </tr>
+              
+              </table><br>
+              <p>Kaucji Zwrotna wynosi: 0 lub 3000 zł ✅</p><br>
+              </p>Dodatkowy kilometr: 2,00 zł / km ✅</p>
+            </div>
+        </div>
+      </section>
+      <div class="main_icon">
+        <div class="footer_main_icon">
+            <a href="#" class="footer_icon"><i class = "fab fa-facebook-f"></i></a>
+            <a href="#" class="footer_icon"><i class = "fab fa-twitter"></i></a>
+            <a href="#" class="footer_icon"><i class = "fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script>
+  
+      var setdate = new Date("Jan 31, 2023 17:21:30").getTime();
+      var x = setInterval(function() {
+      var nowtime = new Date().getTime();
+      var time = setdate - nowtime;
+        
+       
+        var days = Math.floor(time / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((time % (1000 * 60)) / 1000);
+      
+        
+        document.getElementById("timer").innerHTML = "Koniec promocji za : "+ days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        console.log(seconds);
+        document.getElementById('price1').innerHTML = 449 + "<sup>zł</sup>/dzień";
+        document.getElementById('price2').innerHTML = 449 + "<sup>zł</sup>/dzień";
+        document.getElementById('price3').innerHTML = 299 + "<sup>zł</sup>/dzień";
+        document.getElementById('price4').innerHTML = 499 + "<sup>zł</sup>/dzień";
+        
+        if (time < 0) {
+          clearInterval(x);
+          promocja = false;
+          document.getElementById("timer").innerHTML = "Koniec Promocji!";
+          document.getElementById('price1').innerHTML = 549 + "<sup>zł</sup>/dzień";
+          document.getElementById('price2').innerHTML = 549 + "<sup>zł</sup>/dzień";
+          document.getElementById('price3').innerHTML = 399 + "<sup>zł</sup>/dzień";
+          document.getElementById('price4').innerHTML = 599 + "<sup>zł</sup>/dzień";
+        }
+      }, 1000);
+      </script>
+    
+  
+    <script src="main.js"></script>
+</body>
+</html>
